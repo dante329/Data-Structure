@@ -1,0 +1,3 @@
+﻿  Test.c
+D:\C_develop\code\practice\Project11_25\Project11_25\Test.c(62,12): error C2065: “c”: 未声明的标识符
+D:\C_develop\code\practice\Project11_25\Project11_25\Test.c(62,38): error C2065: “c”: 未声明的标识符
