@@ -23,12 +23,12 @@ struct SListNode
 typedef struct SListNode SLNode;
 
 //不改变链表的头指针，传一级指针
-void SlistPrint(SLNode* phead);
+void SListPrint(SLNode* phead);
 //可能会改变链表的头指针，传二级指针
-void SlistPushBack(SLNode** pphead, SListDataType x); 
-void SlistPushFront(SLNode** pphead, SListDataType x); 
-void SlistPopBack(SLNode** pphead);
-void SlistPopFront(SLNode** pphead);
-SLNode* SlistFind(SLNode* phead, SListDataType x);
-void SlistInsert(SLNode** pphead, SLNode* pos, SListDataType x);//pos是由SlistFind找到的
-void SlistErase(SLNode** pphead, SLNode* pos);
+void SListPushBack(SLNode** pphead, SListDataType x); 
+void SListPushFront(SLNode** pphead, SListDataType x); 
+void SListPopBack(SLNode** pphead);
+void SListPopFront(SLNode** pphead);
+SLNode* SListFind(SLNode* phead, SListDataType x);
+void SListInsert(SLNode** pphead, SLNode* pos, SListDataType x);//pos是由SListFind找到的
+void SListErase(SLNode** pphead, SLNode* pos);

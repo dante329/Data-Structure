@@ -3,7 +3,7 @@
 #include "SList.h"
 
 //打印
-void SlistPrint(SLNode* phead)
+void SListPrint(SLNode* phead)
 {
 	SLNode* cur = phead;
 	while (cur != NULL)
@@ -25,11 +25,11 @@ static SLNode* BuySListNode(SListDataType x)
 	return newnode;
 }
 
-//void SlistPushBack(SLNode* phead, SListDataType x)
+//void SListPushBack(SLNode* phead, SListDataType x)
 //不要在这看到SLNode* phead是个指针类型的参数就放心了，看看main函数中是怎样定义节点的？main函数中也是用指针去初始化一个节点并传入进来的 SLNode* plist = NULL;
 //那么在这就要用二级指针去接受main函数中定义的那个指针plist的地址，这样才能对plist中的内容进行修改，不然形参只是实参的一份临时拷贝，对形参的修改是无法影响到实参的
 //如果想要在函数内改变外面的实参，那么就要传地址或者传引用（C++）
-void SlistPushBack(SLNode** pphead, SListDataType x)
+void SListPushBack(SLNode** pphead, SListDataType x)
 {
 	//按顺序去分析逻辑，不对的地方漏掉的地方慢慢改慢慢添加
 	//既然是尾插，肯定要先建立一个新的节点
@@ -51,7 +51,7 @@ void SlistPushBack(SLNode** pphead, SListDataType x)
 
 }
 
-void SlistPushFront(SLNode** pphead, SListDataType x)
+void SListPushFront(SLNode** pphead, SListDataType x)
 {
 	SLNode* newnode = BuySListNode(x);
 	
@@ -59,7 +59,7 @@ void SlistPushFront(SLNode** pphead, SListDataType x)
 	*pphead = newnode;
 }
 
-void SlistPopBack(SLNode** pphead)
+void SListPopBack(SLNode** pphead)
 {
 	//1.没有节点
 	//2.只有一个节点
@@ -87,14 +87,14 @@ void SlistPopBack(SLNode** pphead)
 	}
 }
 
-void SlistPopFront(SLNode** pphead)
+void SListPopFront(SLNode** pphead)
 {
 	SLNode* next = (*pphead)->next;
 	free(*pphead);
 	*pphead = next;
 }
 
-SLNode* SlistFind(SLNode* phead, SListDataType x)
+SLNode* SListFind(SLNode* phead, SListDataType x)
 {
 	SLNode* cur = phead;
 	
@@ -110,13 +110,13 @@ SLNode* SlistFind(SLNode* phead, SListDataType x)
 	
 }
 
-void SlistInsert(SLNode** pphead, SLNode* pos, SListDataType x)
+void SListInsert(SLNode** pphead, SLNode* pos, SListDataType x)
 {
 	SLNode* newnode = BuySListNode(x);
 
 	if (pos == 1)
 	{
-		SlistPushFront(pphead, x);
+		SListPushFront(pphead, x);
 	}
 	SLNode* prev = *pphead;
 	while (prev->next != pos)//这里一上来比较的就是prev->next与pos，如果pos是1那么永远匹配不到，所以要单独判断pos=1的情况
@@ -129,20 +129,18 @@ void SlistInsert(SLNode** pphead, SLNode* pos, SListDataType x)
 
 void SListErase(SLNode** pphead, SLNode* pos)
 {
-	if (pos == 1)
+	if (pos == *pphead)
 	{
-		free()
+		SListPopFront(pphead);
 	}
-	SLNode* prev = NULL;
-	SLNode* cur = *pphead;
-	while (cur != NULL)
+	else
 	{
-		if (cur == pos)
+		SLNode* prev = *pphead;
+		while (prev->next != pos)
 		{
-			prev->next = cur->next;
-			free(cur);
+			prev = prev->next;
 		}
-		prev = cur;
-		cur = cur->next;
+		prev->next = pos->next;
+		free(pos);
 	}
 }

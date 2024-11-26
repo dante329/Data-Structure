@@ -5,19 +5,27 @@
 void Test()
 {
 	SLNode* plist = NULL;
-	SlistPushBack(&plist, 1);
-	SlistPushBack(&plist, 2);
-	SlistPushBack(&plist, 3);
-	SlistPushBack(&plist, 4);
-	SlistPushBack(&plist, 5);
-	SlistPushBack(&plist, 6);
-	SlistPrint(plist);
-	SLNode* pos = SlistFind(plist, 6);
+	SListPushBack(&plist, 1);
+	SListPushBack(&plist, 2);
+	SListPushBack(&plist, 3);
+	SListPushBack(&plist, 4);
+	SListPushBack(&plist, 5);
+	SListPushBack(&plist, 6);
+	SListPrint(plist);
+	SLNode* pos = SListFind(plist, 6);
 	if (pos != NULL)
 	{
-		SlistInsert(&plist, pos, 10);
+		SListInsert(&plist, pos, 10);
 	}
-	SlistPrint(plist);
+	SListPrint(plist);
+	pos = SListFind(plist, 10);
+	SListErase(&plist, pos);
+	SListPrint(plist);
+	pos = SListFind(plist, 1);
+	SListErase(&plist, pos);
+	SListPrint(plist);
+
+
 }
 
 int main()
