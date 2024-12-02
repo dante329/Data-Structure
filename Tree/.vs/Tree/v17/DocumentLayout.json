@@ -1,12 +1,71 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\C_develop\\code\\practice\\Tree\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CB56F985-EA74-4BEE-B935-4D61AFB12AD2}|Tree\\Tree.vcxproj|D:\\C_develop\\code\\practice\\Tree\\Tree\\Tree.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CB56F985-EA74-4BEE-B935-4D61AFB12AD2}|Tree\\Tree.vcxproj|solutionrelative:Tree\\Tree.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB56F985-EA74-4BEE-B935-4D61AFB12AD2}|Tree\\Tree.vcxproj|D:\\C_develop\\code\\practice\\Tree\\Tree\\Queue.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CB56F985-EA74-4BEE-B935-4D61AFB12AD2}|Tree\\Tree.vcxproj|solutionrelative:Tree\\Queue.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB56F985-EA74-4BEE-B935-4D61AFB12AD2}|Tree\\Tree.vcxproj|D:\\C_develop\\code\\practice\\Tree\\Tree\\Queue.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CB56F985-EA74-4BEE-B935-4D61AFB12AD2}|Tree\\Tree.vcxproj|solutionrelative:Tree\\Queue.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Queue.c",
+              "DocumentMoniker": "D:\\C_develop\\code\\practice\\Tree\\Tree\\Queue.c",
+              "RelativeDocumentMoniker": "Tree\\Queue.c",
+              "ToolTip": "D:\\C_develop\\code\\practice\\Tree\\Tree\\Queue.c",
+              "RelativeToolTip": "Tree\\Queue.c",
+              "ViewState": "AQIAABkAAAAAAAAAAAAAAB0AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-12-02T04:52:27.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Queue.h",
+              "DocumentMoniker": "D:\\C_develop\\code\\practice\\Tree\\Tree\\Queue.h",
+              "RelativeDocumentMoniker": "Tree\\Queue.h",
+              "ToolTip": "D:\\C_develop\\code\\practice\\Tree\\Tree\\Queue.h",
+              "RelativeToolTip": "Tree\\Queue.h",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-02T04:33:39.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Tree.c",
+              "DocumentMoniker": "D:\\C_develop\\code\\practice\\Tree\\Tree\\Tree.c",
+              "RelativeDocumentMoniker": "Tree\\Tree.c",
+              "ToolTip": "D:\\C_develop\\code\\practice\\Tree\\Tree\\Tree.c",
+              "RelativeToolTip": "Tree\\Tree.c",
+              "ViewState": "AQIAAH4AAAAAAAAAAAAAAHAAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-12-02T03:00:32.336Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

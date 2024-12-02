@@ -1,0 +1,7 @@
+﻿  Queue.c
+  Tree.c
+  正在生成代码...
+D:\C_develop\code\practice\Tree\Tree\Tree.c(21,3): warning C4098: “PreOrder”:“void”函数返回值
+D:\C_develop\code\practice\Tree\Tree\Tree.c(31,3): warning C4098: “InOrder”:“void”函数返回值
+D:\C_develop\code\practice\Tree\Tree\Tree.c(41,3): warning C4098: “PostOrder”:“void”函数返回值
+  Tree.vcxproj -> D:\C_develop\code\practice\Tree\x64\Debug\Tree.exe
