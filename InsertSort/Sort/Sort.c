@@ -83,7 +83,17 @@ void TestSort()
 	PrintArray(a, sizeof(a) / sizeof(int));
 }
 
-void TestPerformance()
+void TestPerformance(void (*sortFunc)(int*, int), const char* sortName, int* a, int n)//这里将函数指针作为参数传入，更好地实现测试功能模块化
+{
+    clock_t start = clock(); // 记录开始时间
+    sortFunc(a, n);          // 执行排序函数
+    clock_t end = clock();   // 记录结束时间
+
+    double timeTaken = (double)(end - start) / CLOCKS_PER_SEC;//CLOCKS_PER_SEC 是一个宏，定义在 C 的 <time.h> 头文件中，用于将 clock() 函数的返回值转换为以秒为单位的时间。它表示每秒对应的 时钟计时单元数，即 clock() 函数每秒“滴答”的次数。
+    printf("%s 排序运行时间：%.3f 秒\n", sortName, timeTaken);
+}
+
+void TestOP()
 {
 	srand(time(0));
 	int N = 100000;
@@ -96,10 +106,16 @@ void TestPerformance()
 		a2[i] = a1[i];
 	}
 
+	TestPerformance(InsertSort, "直接插入排序", a1, N);
+	TestPerformance(ShellSort, "希尔排序", a2, N);
+
+	free(a1);
+	free(a2);
 }
 
 int main()
 {
-	TestSort();
+	//TestSort();
+	TestOP();
 	return 0;
 }

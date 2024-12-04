@@ -1,0 +1,3 @@
+﻿  Sort.c
+D:\C_develop\code\Data-Structure\Sort\Sort\Sort.c(98,8): warning C4244: “函数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+  Sort.vcxproj -> D:\C_develop\code\Data-Structure\Sort\x64\Debug\Sort.exe
