@@ -1,0 +1,3 @@
+﻿  QuickSort.c
+D:\C_develop\code\Data-Structure\QuickSort\QuickSort\QuickSort.c(35,8): warning C4244: “函数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+  QuickSort.vcxproj -> D:\C_develop\code\Data-Structure\QuickSort\x64\Debug\QuickSort.exe
