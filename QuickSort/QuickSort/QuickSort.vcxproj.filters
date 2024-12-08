@@ -18,5 +18,8 @@
     <ClCompile Include="QuickSort.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Practice.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

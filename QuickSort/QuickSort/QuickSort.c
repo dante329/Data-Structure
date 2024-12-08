@@ -146,6 +146,8 @@ int PartSort2(int* a, int left, int right)
 	while (begin < end)
 	{		
 		//一定要先找小！！！先找大就是错的
+		//为什么？！！最后begin、end 停留的位置的值肯定是要 小于 key 的 此时交换索引 begin 和最左边元素key 符合将小于key的值放到key左边这一条件
+		//先从左边开始执行时，begin 先开始找大，end再接着找小，循环结束后的 begin end 碰面的时的值肯定是要 大于 key 的 此时再交换key与索引位置 相当于把比key大的值放到了key左边 （begin永远先end一步先占据一个大数，相当于begin占据主导地位，当它们很接近时，begin就会先找到一个大数，然后end就会因为begin < end这个条件而中止，最终end会重合在begin指向的大数上，再与key交换，相当于将一个大数排到了key的左边）
 		while (begin < end && a[end] >= a[keyi])
 		{
 			--end;

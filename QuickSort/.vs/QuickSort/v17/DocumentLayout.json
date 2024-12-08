@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{C60BA52D-8556-4DAA-9DC7-FDF1E856EF4F}|QuickSort\\QuickSort.vcxproj|D:\\C_develop\\code\\Data-Structure\\QuickSort\\QuickSort\\QuickSort.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{C60BA52D-8556-4DAA-9DC7-FDF1E856EF4F}|QuickSort\\QuickSort.vcxproj|solutionrelative:QuickSort\\QuickSort.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C60BA52D-8556-4DAA-9DC7-FDF1E856EF4F}|QuickSort\\QuickSort.vcxproj|D:\\C_develop\\code\\Data-Structure\\QuickSort\\QuickSort\\practice.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C60BA52D-8556-4DAA-9DC7-FDF1E856EF4F}|QuickSort\\QuickSort.vcxproj|solutionrelative:QuickSort\\practice.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +18,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Practice.c",
+              "DocumentMoniker": "D:\\C_develop\\code\\Data-Structure\\QuickSort\\QuickSort\\Practice.c",
+              "RelativeDocumentMoniker": "QuickSort\\Practice.c",
+              "ToolTip": "D:\\C_develop\\code\\Data-Structure\\QuickSort\\QuickSort\\Practice.c",
+              "RelativeToolTip": "QuickSort\\Practice.c",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAgwB4AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-12-08T06:48:54.678Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,7 +41,7 @@
               "RelativeDocumentMoniker": "QuickSort\\QuickSort.c",
               "ToolTip": "D:\\C_develop\\code\\Data-Structure\\QuickSort\\QuickSort\\QuickSort.c",
               "RelativeToolTip": "QuickSort\\QuickSort.c",
-              "ViewState": "AQIAACIAAAAAAAAAAAAAAAMBAAAMAAAA",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAgwAYBAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-12-06T16:10:11.39Z",
               "EditorCaption": ""
