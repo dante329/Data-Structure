@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\github维护\Data-Structure\HeapSort\HeapSort\HeapSort.c">
+    <ClCompile Include="BubbleSort.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

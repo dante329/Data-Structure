@@ -14,7 +14,7 @@ void Swap(int* p1, int* p2)//当最小值（mini）和当前起始位置（start）的索引相同时
 
 
 //最好还是用临时变量交换
-void Swap(int* x, int* y) 
+void Swap(int* x, int* y)
 {
 	int tmp = *x;
 	*x = *y;
@@ -24,8 +24,8 @@ void Swap(int* x, int* y)
 
 //最垃圾的直接选择排序
 void SelectSort(int* a, int n)
-{	
-	int start = 0, end = n-1;
+{
+	int start = 0, end = n - 1;
 	while (start < end)
 	{
 		int mini = start, maxi = start;
@@ -60,7 +60,7 @@ void BubbleSort(int* a, int n)
 	for (int j = 0; j < n; ++j)
 	{
 		int exchange = 0;
-		for (int i = 1; i < n-j; ++i)
+		for (int i = 1; i < n - j; ++i)
 		{
 			if (a[i] > a[i - 1])
 			{
@@ -90,7 +90,7 @@ void TestSort()
 	SelectSort(a, sizeof(a) / sizeof(int));
 	PrintArray(a, sizeof(a) / sizeof(int));
 }
- 
+
 int main()
 {
 	TestSort();
