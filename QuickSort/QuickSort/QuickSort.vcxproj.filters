@@ -21,5 +21,13 @@
     <ClCompile Include="Practice.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Stack.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Stack.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -4,6 +4,8 @@
 #include <stdlib.h>
 #include <time.h>
 
+#include "Stack.h"
+
 void PrintArray(int* a, int n)
 {
 	for (int i = 0; i < n; ++i)
@@ -250,10 +252,48 @@ void QuickSort(int* a, int left, int right)
 	}*/
 }
 
+//12_10 更新：快排非递归实现
+//递归的缺陷：在极端情况下，递归深度非常深时，会发生栈溢出，因为栈的内存空间是很小的，大概只有8MB
+//非递归一般有两个思路：1.直接用遍历代替 2.使用数据结构中的栈模拟实现递归
+void QuickSortNonR(int* a, int n)
+{
+	//创建一个栈结构体变量，用来储存left，right区间信息，一定注意高耦合低内聚，要通过包装好的方法去操作数据
+	ST st;
+	StackInit(&st);
+	//先把整个数据的left和right传入进去，进行第一趟快排，注意这里我想要先排左边再排右边，就先压栈右再压栈左
+	StackPush(&st, n - 1);
+	StackPush(&st, 0);
+	
+	//取出栈顶元素进行第一趟快排,得到第一趟排好的keyindex
+	//第一趟排完后，这时整个数组被分成了[left,keyindex-1] keyindex [keyindex+1,right]
+	while (!StackEmpty(&st))
+	{
+		int left = StackTop(&st);
+		StackPop(&st);
+		int right = StackTop(&st);
+		StackPop(&st);
+		int keyindex = PartSort3(a, left, right);
+
+		if (keyindex + 1 < right)
+		{
+			StackPush(&st, right);
+			StackPush(&st, keyindex + 1);
+		}
+		if (left < keyindex - 1)
+		{
+			StackPush(&st, keyindex - 1);
+			StackPush(&st, left);
+		}
+	}
+
+	StackDestory(&st);
+}
+
 void TestSort()
 {
 	int a[] = { 4,1,3,7,9,2,8,5,6};
-	QuickSort(a, 0, sizeof(a) / sizeof(int) - 1);
+	//QuickSort(a, 0, sizeof(a) / sizeof(int) - 1);
+	QuickSortNonR(a, sizeof(a) / sizeof(int));
 	PrintArray(a, sizeof(a) / sizeof(int));
 }
 
