@@ -23,6 +23,7 @@ void StackPush(ST* ps, StackDataType x)
 		else
 		{
 			ps->data = tmp;
+			ps->capacity *= 2; //StackPush扩容后未更新capacity 12_13已修改
 		}
 	}
 	ps->data[ps->top] = x;
